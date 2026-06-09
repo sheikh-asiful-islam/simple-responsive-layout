@@ -4,20 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
+
+
     <style>
 
         .container{
             display: grid;
-            grid-template-columns: 200px 200px 200px;
-            grid-template-columns: repeat(2,200px);
+            /* grid-template-columns: 200px 200px 200px; */
+            
+            grid-template-columns: repeat(2, 200px);
 
-            grid-template-columns: repeat();
+            /* grid-template-columns: repeat(); */
+            /* grid-template-columns: repeat(3, 1fr); */
+
+            /* grid-template-columns: repeat(2, 100px) 200px 150px ; */
+
+            /* grid-template-columns: repeat(6, 1fr) 2fr */
+            grid-template-columns:  100px 200px 200px;
+            justify-content: space-around;
+
+
+
         }
 
 
         .item{
             border: 1px solid rebeccapurple;
         }
+
     </style>
 
 
@@ -26,6 +40,7 @@
     <h2>Explore Grid Layout: 2D Layout</h2>
 
     <div class="container">
+        <!-- .item{item - $}*20 -->
         <div class="item">item- 1</div>
         <div class="item">item- 2</div>
         <div class="item">item- 3</div>
